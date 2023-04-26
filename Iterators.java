@@ -1,0 +1,26 @@
+package com.sololearn;
+import java.util.Scanner;
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class Iterators {
+	  public static void main(String[ ] args) {
+	       Scanner scanner = new Scanner(System.in);
+	        
+	       LinkedList<Integer> nums = new LinkedList<Integer>();
+	        
+	       while(nums.size()<5){
+	           int num = scanner.nextInt();
+	            nums.add(num);
+	        }
+	        
+	        
+	        int sum = 0;
+	        //your code goes here
+	        for(int i=0;i<nums.size();i++)
+	        {
+	        	sum+=nums.get(i);
+	        }
+	        System.out.println(sum);
+	}
+}
